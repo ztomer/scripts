@@ -23,7 +23,7 @@ git submodule sync; git submodule update
 echo "== Backing up configurations =="
 brew list > ~/Documents_GD/Documents/Computing\ notes/brew_list.txt
 brew cask list > ~/Documents_GD/Documents/Computing\ notes/brew_cask.txt
-cp ~/.mjolnir/init.lua ~/Documents_GD/Documents/Computing\ notes/mjolnir_init.lua
+pip3.4 list > ~/Documents_GD/Documents/Computing\ notes/pip_list.txt
 cp ~/.hammerspoon/init.lua ~/Documents_GD/Documents/Computing\ notes/hs_init.lua
 cp ~/bin/* ~/Documents_GD/Documents/Computing\ notes/bin/
 
