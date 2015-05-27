@@ -9,6 +9,6 @@
 # brew reinstall --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 
 # upgrade everything else
-brew update && brew upgrade `brew outdated`
+brew update && brew upgrade `brew outdated` --all
 brew cleanup -
 
