@@ -2,12 +2,16 @@
 
 RSYNC=/usr/local/bin/rsync
 PARAM=-aP
+
 # sync music
 
 $RSYNC $PARAM --delete /Volumes/2Tb.Ext/Music/ /mnt/htpc/Data/Music/
 
 # sync program backups
 $RSYNC $PARAM --delete /Volumes/2Tb.Ext/Programs\ Backup/\[osX\]/ /mnt/htpc/Binaries/Backup/programs/\[osX\]/
+
+# sync program backups
+$RSYNC $PARAM --delete /Volumes/2Tb.Ext/Programs\ Backup/\[pc\]/ /mnt/htpc/Binaries/Backup/programs/\[pc\]/
 
 # sync pictures
 $RSYNC $PARAM /Volumes/2Tb.Ext/pictures/ /mnt/htpc/Data/pictures/
