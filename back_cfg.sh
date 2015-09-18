@@ -1,10 +1,13 @@
 # backup homebrew and homebrew cask install list to google drive
+#!/bin/zsh
+GOOGLE_DRIVE=~/Documents_GD/dotfiles
 echo "== Backing up configurations =="
-brew list > ~/Documents_GD/Documents/Computing\ notes/brew_list.txt
-brew cask list > ~/Documents_GD/Documents/Computing\ notes/brew_cask.txt
-pip3.4 list > ~/Documents_GD/Documents/Computing\ notes/pip_list.txt
-cp ~/.hammerspoon/init.lua ~/Documents_GD/Documents/Computing\ notes/hs_init.lua
-cp ~/.zshrc ~/Documents_GD/Documents/Computing\ notes/.zshrc
-cp ~/.spacemacs ~/Documents_GD/Documents/Computing\ notes/.spacemacs
-cp ~/bin/* ~/Documents_GD/Documents/Computing\ notes/bin/
-cp ~/.zshrc ~/Documents_GD/Documents/Computing\ notes/bin/
+brew list > ${GOOGLE_DRIVE}/brew_list.txt
+brew cask list > ${GOOGLE_DRIVE}/brew_cask.txt
+pip3 list > ${GOOGLE_DRIVE}/pip3_list.txt
+pip2 list > ${GOOGLE_DRIVE}/pip2_list.txt 
+cp ~/.hammerspoon/init.lua ${GOOGLE_DRIVE}/hs_init.lua
+cp ~/.zshrc ${GOOGLE_DRIVE}/.zshrc
+cp ~/.spacemacs ${GOOGLE_DRIVE}/.spacemacs
+cp ~/bin/* ${GOOGLE_DRIVE}/bin/
+cp ~/.zshrc ${GOOGLE_DRIVE}/bin/
