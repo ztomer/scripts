@@ -24,10 +24,10 @@ $RSYNC $PARAM $EXTERNAL_HDD/pictures/ $REMOTE_DATA/pictures/
 $RSYNC $PARAM $USER_DIR/Books\ -\ Info/ $EXTERNAL_HDD/Books\ -\ Info/
 
 #now to server
-$RSYNC $PARAM $USER_DIR/Users/ztomer/Books\ -\ Info/ $REMOTE_BIN/Backup/Books\ -\ Info/
+$RSYNC $PARAM $USER_DIR/Books\ -\ Info/ $REMOTE_BIN/Backup/Books\ -\ Info/
 
 # books - Reading
-$RSYNC $PARAM $USER_DIR/Users/ztomer/Books\ -\ Reading/ $REMOTE_BIN/Backup/Books\ -\ Reading/
+$RSYNC $PARAM $USER_DIR/Books\ -\ Reading/ $REMOTE_BIN/Backup/Books\ -\ Reading/
 
 # Comics
 $RSYNC $PARAM $EXTERNAL_HDD/Comics/ $REMOTE_BIN/Backup/Comics/
