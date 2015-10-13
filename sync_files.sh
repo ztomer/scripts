@@ -2,41 +2,45 @@
 
 RSYNC=/usr/local/bin/rsync
 PARAM=-aP
-
+EXTERNAL_HDD=/Volumes/2Tb.Ext
+REMOTE_BIN=/mnt/htpc/Binaries
+REMOTE_DATA=/mnt/htpc/Data
+USER_DIR=/Users/ztomer
 # sync music
 
-$RSYNC $PARAM --delete /Volumes/2Tb.Ext/Music/ /mnt/htpc/Data/Music/
+$RSYNC $PARAM --delete $EXTERNAL_HDD/Music/ $REMOTE_DATA/Music/
 
 # sync program backups
-$RSYNC $PARAM --delete /Volumes/2Tb.Ext/Programs\ Backup/\[osX\]/ /mnt/htpc/Binaries/Backup/programs/\[osX\]/
+$RSYNC $PARAM --delete $EXTERNAL_HDD/Programs\ Backup/\[osX\]/ $REMOTE_BIN/Backup/programs/\[osX\]/
 
 # sync program backups
-$RSYNC $PARAM --delete /Volumes/2Tb.Ext/Programs\ Backup/\[pc\]/ /mnt/htpc/Binaries/Backup/programs/\[pc\]/
+$RSYNC $PARAM --delete $EXTERNAL_HDD/Programs\ Backup/\[pc\]/ $REMOTE_BIN/Backup/programs/\[pc\]/
 
 # sync pictures
-$RSYNC $PARAM /Volumes/2Tb.Ext/pictures/ /mnt/htpc/Data/pictures/
+$RSYNC $PARAM $EXTERNAL_HDD/pictures/ $REMOTE_DATA/pictures/
 
 # sync books - info
 # first to hdd
-$RSYNC $PARAM /Users/ztomer/Books\ -\ Info/ /Volumes/2Tb.Ext/Books\ -\ Info/
+$RSYNC $PARAM $USER_DIR/Books\ -\ Info/ $EXTERNAL_HDD/Books\ -\ Info/
 
 #now to server
-$RSYNC $PARAM /Users/ztomer/Books\ -\ Info/ /mnt/htpc/Binaries/Backup/Books\ -\ Info/
+$RSYNC $PARAM $USER_DIR/Users/ztomer/Books\ -\ Info/ $REMOTE_BIN/Backup/Books\ -\ Info/
 
 # books - Reading
-$RSYNC $PARAM /Users/ztomer/Books\ -\ Reading/ /mnt/htpc/Binaries/Backup/Books\ -\ Reading/
+$RSYNC $PARAM $USER_DIR/Users/ztomer/Books\ -\ Reading/ $REMOTE_BIN/Backup/Books\ -\ Reading/
 
 # Comics
-$RSYNC $PARAM /Volumes/2Tb.Ext/Comics/ /mnt/htpc/Binaries/Backup/Comics/
+$RSYNC $PARAM $EXTERNAL_HDD/Comics/ $REMOTE_BIN/Backup/Comics/
 
 # OsX games
-$RSYNC $PARAM  /Volumes/2Tb.Ext/Games\ backup/\[OsX\]/ /mnt/htpc/Binaries/Backup/Games/\[OsX\]/
+$RSYNC $PARAM  $EXTERNAL_HDD/Games\ backup/\[OsX\]/ $REMOTE_BIN/Backup/Games/\[OsX\]/
 
 #PC games
-$RSYNC $PARAM  /Volumes/2Tb.Ext/Games\ backup/\[PC\]/ /mnt/htpc/Binaries/Backup/Games/\[PC\]/
+$RSYNC $PARAM  $EXTERNAL_HDD/Games\ backup/\[PC\]/ $REMOTE_BIN/Backup/Games/\[PC\]/
 
 # GOG games
-$RSYNC $PARAM  /Volumes/2Tb.Ext/Games\ backup/GOG/ /mnt/htpc/Binaries/Backup/Games/GOG/
+$RSYNC $PARAM  $EXTERNAL_HDD/Games\ backup/GOG/ $REMOTE_BIN/Backup/Games/GOG/
 
-
+# Projects
+$RSYNC $PARAM $USER_DIR/Projects $EXTERNAL_HDD/Projects
 
