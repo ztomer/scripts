@@ -18,5 +18,6 @@ Self serving maintenance scripts (for OsX, some will work on Linux)
 * **subl** - symbolic link to sublime text
 * **sync_files.sh** - sync files from laptop to file server
 * **up.sh** - run all update scripts
-* **update_emacs.sh** - get latest spacemacs packages
-* **update_git.sh** - update all git repositores
+* **update_emacs.sh**   - get latest spacemacs packages
+* **update_git.sh**     - update all git repositores
+* **umount_volumes.sh** - remount smb volumes - workaround for Apple's autofs bug, use when smb mounts permissions fails 
