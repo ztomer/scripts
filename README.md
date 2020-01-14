@@ -1,23 +1,17 @@
 Scripts
 =======
-Self serving maintenance scripts (for OsX, some will work on Linux)
+Miscellenious scripts of no particular value.
+Nothing is generalized, all under "works-for-me"/ Public Domain license.
+If something breaks, you get to keep both halfs! :)
 
-* **back_cfg.sh**     - backup configuration files to Google Drive
-* **brew_desc_all.sh** - print description for all installed homebrew packages
-* **brew_update.sh** - update all installed homebrew packages
 * **fix-macosx.py** - fix various osX annoyances
 * **gc_git.sh** - garbage collect git repositories
-* **login_scripts.app** - run loging scripts in startup 
-* **m.sh** - start music from mpd server (defunct)
-* **s.sh** - stop music from mpd server(defunct)
-* **pip2_upgrade.py** - upgrade python 2.* packages
-* **pip3_upgrade.py** - upgrade python 3.* packages
-* **pomo.py** - trivial pomodoro app (defunct)
-* **sign_all.sh** - sign all installed osX apps
+* **flac2mp3** - converts multiple media formats to MP3/320kps
+* **gc_git** - Garbage collect Git projects. Sometimes the overall size increases, so IMMV
+* **imguralbum.py** - Downloads and entire imgurl album. No idea if it still works, been several years
+* **mkv2mp4** - Convert MKV files to MP4 files, since that's what my TV supports and I'm too cheap to by another TV box
+* **sign_all.sh** - sign all installed osX apps (I since stopped using OsX, what is it still here?)
 * **stopwatch.py** - trivial stopwatch script
-* **subl** - symbolic link to sublime text
-* **sync_files.sh** - sync files from laptop to file server
-* **up.sh** - run all update scripts
-* **update_emacs.sh**   - get latest spacemacs packages
-* **update_git.sh**     - update all git repositores
-* **umount_volumes.sh** - remount smb volumes - workaround for Apple's autofs bug, use when smb mounts permissions fails 
+* **update_git.sh** - update all git repositores (that where mostly cloned from Github. Such is life)
+* **update_python_packages.py** - updates all install Python3 packages, assuming you're using the same exact setup as mine. 
+* **view_bookmarks.py** - opens all URLS in a bookmarks file in new tabs. I use it to associate reference lists to projects.
