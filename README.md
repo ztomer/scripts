@@ -14,4 +14,4 @@ If something breaks, you get to keep both halfs! :)
 * **stopwatch.py** - trivial stopwatch script
 * **update_git.sh** - update all git repositores (that were mostly cloned from Github. Such is life)
 * **update_python_packages.py** - updates all install Python3 packages, assuming you're using the same exact setup as me. 
-* **view_bookmarks.py** - opens all URLS in a bookmarks file in new tabs. I use it to associate reference lists to projects.
+* **view_bookmarks.py** - opens all URLS in a bookmarks file in new tabs. I use it to associate reference lists to projects, but you dont *have* to
