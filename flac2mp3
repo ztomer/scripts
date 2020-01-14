@@ -1,0 +1,7 @@
+#!/bin/bash
+TARGET_DIR=${1:-.}
+find ${TARGET_DIR} -name "*.flac" -exec sh -c 'ffmpeg -y -i "$1" -acodec libmp3lame -aq 0 "${1%.flac}.mp3" && rm -f "$1"' _ {} \;
+find ${TARGET_DIR} -name "*.ape" -exec sh -c 'ffmpeg -y -i "$1" -acodec libmp3lame -aq 0 "${1%.ape}.mp3" && rm -f "$1"' _ {} \;
+find ${TARGET_DIR} -name "*.wv" -exec sh -c 'ffmpeg -y -i "$1" -acodec libmp3lame -aq 0 "${1%.wv}.mp3" && rm -f "$1"' _ {} \;
+find ${TARGET_DIR} -name "*.ogg" -exec sh -c 'ffmpeg -y -i "$1" -acodec libmp3lame -aq 0 "${1%.ogg}.mp3" && rm -f "$1"' _ {} \;
+
